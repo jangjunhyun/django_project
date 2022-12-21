@@ -6,6 +6,7 @@
 <form action="" method="post">
     {% csrf_token %}
     {{form.as_p}}
-    <input type="submit" value="Update" class="btn btn-info btn-sm">
+    <input type="submit" value="수정하기" class="btn btn-outline-success">
+    <a class="btn btn-outline-secondary" href="{% url 'bookmark:list' %}">뒤로가기</a>
 </form>
 {% endblock %}

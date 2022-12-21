@@ -8,7 +8,7 @@ from django.views.generic.detail import DetailView
 # Create your views here.
 class BookmarkListView(ListView):
     model = Bookmark
-    paginate_by = 6
+    paginate_by = 7
 
 class BookmarkCreateView(CreateView):
     model = Bookmark

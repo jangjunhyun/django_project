@@ -7,5 +7,6 @@
     {% csrf_token %}
     <div class="alert alert-danger">Do you want to delete Bookmark "{{object}}"?</div>
     <input type="submit" value="Delete" class="btn btn-danger">
+    <a class="btn btn-outline-secondary" href="{% url 'bookmark:list' %}">뒤로가기</a>
 </form>
 {% endblock %}
